@@ -1,0 +1,8 @@
+Title: Independent Assessment of AI R&D Acceleration at Anthropic in October 2026
+Author: METR
+Year: 2026
+Type: webpage
+Citation Key: metr2026
+Zotero Key: 7GFQGRI8
+URL: https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/
+Abstract: METR's high-access assessment of the degree to which AI is accelerating AI research and development at Anthropic.

@@ -1,0 +1,57 @@
+\definecolor{rsimuted}{HTML}{6a787b}
+\definecolor{rsidanger}{HTML}{a01c1c}
+\newcommand{\rsilooptag}[3]{%
+\begin{tikzpicture}[remember picture, overlay, >=stealth]
+\begin{scope}[shift={([xshift=-0.85cm, yshift=-0.58cm]current page.north east)}]
+\coordinate (c) at (0,0.27);
+\coordinate (r) at (0.31,-0.2);
+\coordinate (a) at (-0.31,-0.2);
+\draw[#1, line width=1.3pt, ->] (c) to[bend left=28] (r);
+\draw[#2, line width=1.3pt, ->] (r) to[bend left=28] (a);
+\draw[#3, line width=1.3pt, ->] (a) to[bend left=28] (c);
+\end{scope}
+\end{tikzpicture}}
+\newcommand{\rsion}{mLightBrown}
+\newcommand{\rsioff}{white!35!mDarkTeal}
+
+\begin{frame}{How Strong Must the Loop Be?}
+\centering
+\begin{tikzpicture}[>=stealth, box/.style={draw, rounded corners, align=center, minimum height=1.35cm, minimum width=3.9cm}, q/.style={circle, draw=mLightBrown, thick, fill=black!2, inner sep=2pt, text=mLightBrown, font=\bfseries}]
+\useasboundingbox (-7,-1.55) rectangle (7,4.4);
+\node[box] (c) at (0,3.6) {\textbf{Better AI}\\{\scriptsize\color{rsimuted}capability, in ECI points}};
+\node[box] (r) at (3.4,0) {\textbf{More research effort}\\{\scriptsize\color{rsimuted}people, AI agents, experiments}};
+\node[box] (a) at (-3.4,0) {\textbf{Better algorithms}\\{\scriptsize\color{rsimuted}same capability, less compute}};
+\draw[->, very thick] (c.east) to[out=0, in=90] node[pos=0.5] (q1) {} (r.north);
+\draw[->, very thick] (r.west) -- node[pos=0.5] (q2) {} (a.east);
+\draw[->, very thick] (a.north) to[out=90, in=180] node[pos=0.5] (q3) {} (c.west);
+\onslide<2->{
+\node[q] at (q1) {?};
+\node[q] at (q2) {?};
+\node[q] at (q3) {?};
+\node[align=center] at (0,1.75) {\textbf{loop gain} $=$ {\color{mLightBrown}\textbf{?}} $\times$ {\color{mLightBrown}\textbf{?}} $\times$ {\color{mLightBrown}\textbf{?}}};
+}
+\onslide<3->{
+\begin{scope}[shift={(4.95,2.95)}]
+\draw[rsimuted] (0,1.1) -- (0,0) -- (1.5,0);
+\draw[mLightBrown, very thick, domain=0:1.42, samples=30] plot (\x, {0.1*exp(1.65*\x)});
+\node[align=center] at (0.75,-0.8) {\textbf{gain $>$ 1}\\[1pt]{\small accelerates on its own}};
+\end{scope}
+\begin{scope}[shift={(-6.45,2.95)}]
+\draw[rsimuted] (0,1.1) -- (0,0) -- (1.5,0);
+\draw[very thick, domain=0:1.42, samples=30] plot (\x, {0.98*exp(-2*\x)+0.05});
+\node[align=center] at (0.75,-0.8) {\textbf{gain $<$ 1}\\[1pt]{\small fizzles out}};
+\end{scope}
+\node[text=rsimuted, font=\small] at (0,-1.25) {pace of progress over time, with people and compute held fixed};
+}
+\end{tikzpicture}
+\source{cunningham2026}
+\end{frame}
+
+\begin{frame}{How Strong Is the Loop Today?}
+\centering
+\includegraphics<1>[width=\textwidth]{rsi_loop_strength_stage1}%
+\includegraphics<2>[width=\textwidth]{rsi_loop_strength_stage2}%
+\includegraphics<3>[width=\textwidth]{rsi_loop_strength_stage3}%
+\includegraphics<4>[width=\textwidth]{rsi_loop_strength_stage4}
+\source{cunningham2026,naam,lifland2026}
+\end{frame}

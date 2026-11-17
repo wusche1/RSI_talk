@@ -1,0 +1,31 @@
+
+# Ignore everything in output folder except main.pdf
+output/
+!output/main.pdf
+
+# Ignore all PDF files in bib folder
+bib/**/*.pdf
+
+# Ignore HTML snapshots
+bib/**/*.html
+
+# Ignore Zotero sync log
+bib/.sync_log.txt
+
+# ignore embeddings
+embeddings/
+
+# Ignore python env
+.venv/
+
+# ignore chapters
+bib/*/chapters/
+
+.secrets
+*.out
+
+# Ignore cloned experiment repos (contents only, keep the folder)
+experiments/**
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/

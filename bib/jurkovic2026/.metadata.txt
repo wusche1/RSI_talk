@@ -1,0 +1,9 @@
+Title: Orienting to 1 year AGI timelines — LessWrong
+Author: Jurkovic
+Year: 2026
+Type: webpage
+Citation Key: jurkovic2026
+Zotero Key: 85N7S94K
+URL: https://www.lesswrong.com/posts/biFHYdJnMSCmW9Xou/three-plans-for-12-month-timelines
+Abstract: Summary
+ * Timelines to superintelligence without any slowdown interventions look very short now, perhaps with a median in early 2028. AI will likely…

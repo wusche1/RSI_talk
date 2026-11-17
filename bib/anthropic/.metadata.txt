@@ -1,0 +1,8 @@
+Title: When AI builds itself
+Author: Anthropic
+Year: NoDate
+Type: webpage
+Citation Key: anthropic
+Zotero Key: IAQFSHC6
+URL: https://www.anthropic.com/institute/recursive-self-improvement
+Abstract: Our progress toward recursive self-improvement, and its implications.

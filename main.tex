@@ -1,0 +1,55 @@
+\documentclass[aspectratio=169]{beamer}
+
+\input{lib/packages}
+\input{lib/settings}
+\input{lib/metadata}
+\input{lib/paperfig}
+\addbibresource{bib/refs.bib}
+\addbibresource{bib/manual.bib}
+
+\graphicspath{
+  {content/01_intro/figures/}
+  {content/02_what_rsi_looks_like/figures/}
+  {content/03_consequences/figures/}
+  {content/04_evidence/figures/}
+  {content/05_counterarguments/figures/}
+  {content/06_implications/figures/}
+}
+
+\title{Recursive Self-Improvement}
+\author{\instructor}
+\institute{\scriptsize\color{gray}Principles of Intelligence (PIRAMID) \,·\, Meridian Visiting Researcher Programme}
+\date{}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\begin{tikzpicture}[remember picture, overlay]
+\node[anchor=south east, align=center, inner sep=0] at ([xshift=-0.8cm, yshift=0.8cm]current page.south east) {\qrcode[height=2.2cm]{https://github.com/wusche1/RSI_talk/raw/main/output/main.pdf}\\[0.3em]{\scriptsize Slides}};
+\end{tikzpicture}
+\end{frame}
+
+\input{content/01_intro/slides}
+
+\section{What Is RSI?}
+\input{content/02_what_rsi_looks_like/slides}
+
+\section{Consequences of RSI}
+\input{content/03_consequences/slides}
+
+\section{Evidence for RSI}
+\input{content/04_evidence/slides}
+\input{content/04_evidence/slides_conceptual}
+
+\section{Arguments Against RSI}
+\input{content/05_counterarguments/slides}
+
+\section{What Do We Do Now?}
+\input{content/06_implications/slides}
+
+\begin{frame}[allowframebreaks]{References}
+\printbibliography[heading=none]
+\end{frame}
+
+\end{document}

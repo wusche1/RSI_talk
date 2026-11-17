@@ -1,0 +1,8 @@
+Title: NanoGPT speedrun record training time
+Author: Epoch AI
+Year: 2026
+Type: webpage
+Citation Key: ai2026
+Zotero Key: FNX74QSI
+URL: https://epoch.ai/data/nanogpt-speedrun-record-time
+Abstract: Progress on the NanoGPT speedrun, a proxy for AI training efficiency. Participants submit code to train a small language model to a validation loss of 3.28 on FineWeb, using 8 NVIDIA H100 GPUs. Progress is measured by reductions in training time.

@@ -1,0 +1,8 @@
+Title: Measurements for understanding the pace of AI development inside frontier labs
+Author: Anthropic
+Year: 2026
+Type: webpage
+Citation Key: zotero-item-1327
+Zotero Key: MX5HRAGC
+URL: https://www.anthropic.com/institute/measuring-pace-of-ai-development
+Abstract: Today, the world can’t see what’s going on inside AI labs. Anthropic is proposing new metrics that would give the public visibility into frontier AI development.
